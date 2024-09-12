@@ -54,3 +54,4 @@ jobs:
             dist/checksums.txt.pem
             dist/checksums.txt.sig
             dist/*.tar.gz
+        token: ${{ secrets.GH_TOKEN }}
