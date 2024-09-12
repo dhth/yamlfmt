@@ -49,9 +49,9 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          token: ${{ secrets.GH_TOKEN }}
           files: |
             dist/checksums.txt
             dist/checksums.txt.pem
             dist/checksums.txt.sig
             dist/*.tar.gz
-        token: ${{ secrets.GH_TOKEN }}
