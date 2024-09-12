@@ -15,7 +15,6 @@
 name: Github Actions for Releases
 
 on:
-  pull_request:
   push:
     tags:
       - "*"
